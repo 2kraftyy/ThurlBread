@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
+         url("Fonts/Booter - Zero Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+  margin: 0;
+  background: lightgray;
+  text-align: center;
+  font-family: sans-serif;
+  color: #fefefe;
+}
+.container {
+  position: relative;
+  width: 320px;
+  margin: 100px auto 0 auto;
+  perspective: 1500px;
+}
+
+.carousel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d; 
+  animation: rotate360 60s infinite forwards linear;
+  margin: 0px auto 0px auto;
+}
+.carousel__face { 
+  position: absolute;
+  width: 300px;
+  height: 187px;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  background-size: cover;
+  box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
+  display: flex;
+}
+
+span {
+  margin: auto;
+  font-size: 2rem;
+}
+.carousel-text {
+  color: #fff;
+  font-family: "Booter - Zero Zero";
+}
+.carousel-header {
+  margin: 14px auto 0 auto
+}
+.carousel__face:nth-child(1) {
+  background-image: url('https://images.printify.com/mockup/644a75365048945665082ae4/12100/92572/?s=608&t=1682693116000');
+  transform: rotateY(  0deg) translateZ(430px); }
+.carousel__face:nth-child(2) { 
+  background-image: url('https://images.printify.com/mockup/6442b9984a347fd2b606c739/12124/92573/?s=608&t=1682134071000');
+    transform: rotateY( 40deg) translateZ(430px); }
+.carousel__face:nth-child(3) {
+  background-image: url('https://images.printify.com/mockup/64429e5cad02c96bc30572b6/12100/92574/?s=608&t=1682089245000');
+  transform: rotateY( 80deg) translateZ(430px); }
+.carousel__face:nth-child(4) {
+  background-image: url("https://images.printify.com/mockup/6438cb3555a73e427e06aa37/12124/92571/?s=608&t=1682089243000");
+  transform: rotateY(120deg) translateZ(430px); }
+.carousel__face:nth-child(5) { 
+  background-image: url("https://images.printify.com/mockup/642d8ffd9f56fc238e0fc514/12100/92570/?s=608&t=1681247444000");
+ transform: rotateY(160deg) translateZ(430px); }
+.carousel__face:nth-child(6) { 
+  background-image: url("https://images.printify.com/mockup/644982ad84a9578cf5019125/12100/92661/?s=608&t=1682539888000");
+ transform: rotateY(200deg) translateZ(430px); }
+.carousel__face:nth-child(7) { 
+  background-image: url("https://images.printify.com/mockup/6436087624698d6e9e0249b7/12160/92662/?s=608&t=1681323246000");
+ transform: rotateY(240deg) translateZ(430px); }
+.carousel__face:nth-child(8) {
+  background-image: url("https://images.printify.com/mockup/644033877cf2de3e5e0b17ed/12124/93747/?s=608&t=1682134068000");
+  transform: rotateY(280deg) translateZ(430px); }
+.carousel__face:nth-child(9) {
+  background-image: url("https://images.printify.com/mockup/6440267ba20f3f043800ee56/12100/92570/?s=608&t=1681957331000");
+  transform: rotateY(320deg) translateZ(430px); }
+
+
+
+@keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
